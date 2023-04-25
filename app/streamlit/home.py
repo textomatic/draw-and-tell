@@ -102,7 +102,7 @@ def main():
     animal_list = load_classes(_ANIMAL_CLASS_PATH)
 
     # Check if GPU device is available
-    device = 'cpu' if torch.cuda.is_available() else 'cpu'
+    device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
     # Load trained model onto device
     model = load_model(_TORCH_MODEL_WEIGHTS, len(animal_list), device)

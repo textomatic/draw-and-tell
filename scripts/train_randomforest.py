@@ -4,8 +4,6 @@ import os
 import numpy as np
 import pandas as pd
 import cv2
-import matplotlib.pyplot as plt
-from tqdm import tqdm
 from torch.utils.data import Dataset, ConcatDataset
 from sklearn.metrics import accuracy_score
 from sklearn.ensemble import RandomForestClassifier
@@ -182,18 +180,19 @@ def prepare_data(animal_list):
     # Create test set by concatenating dataset from all classes
     test_set = ConcatDataset([DoodlesDataset(fn.split('/')[-1], _DATA_PATH, encoding_dict, num_rows=_TEST_ROWS_PER_CLASS, size=_IMAGE_SIZE, skip_rows=range(1, _TRAIN_ROWS_PER_CLASS+1)) for fn in filtered_filenames])
 
-    train_data = []
-    train_labels = []
+    train_data, train_labels, test_data, test_labels = [], [], [], []
 
+    # Convert train data to numpy array to be used in Scikit-Learn
     for data in train_set:
         inputs, labels = data
         images = inputs.reshape(-1)
         train_data.append(images)
         train_labels.append([labels])
 
-    train_data=np.array(train_data)
-    train_labels=np.array(train_labels)
+    train_data = np.array(train_data)
+    train_labels = np.array(train_labels)
 
+    # Convert test data to numpy array to be used in Scikit-Learn
     for data in test_set:
         inputs, labels = data
         images = inputs.reshape(-1)
