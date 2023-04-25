@@ -167,58 +167,90 @@ Screenshots of the iOS app:
 
 ## Repository Structure
 ```
-|____app
-| |____Home.py
-| |____requirements.txt
-| |____assets
-| | |____podcast_neon_banner.jpeg
-| |____pages
-| | |____Content_Filtering.py
-| | |____Content_Filtering_v2.py
-| | |____Keyword_Similarity.py
-|____requirements.txt
-|____README.md
-|____.gitignore
-|____scripts
-| |____hybrid_collaborative_filtering.py
-| |____config.py
-| |____clean_dataframe_text.py
-| |____content_based_filtering.py
-| |____content_coverage.py
-| |____create_text_embeddings.py
-| |____test.py
-| |____keyword_similarity.py
-|____data
-| |____podcast_df_tokens_040723.pkl
-| |____archive
-| | |____cmm_scraped_podcasts_with_ratings.pkl
-| | |____cleaned_podcast2.pkl
-| | |____cmm_scraped2.pkl
-| | |____another_ratings.pkl
-| | |____firstscrape_ratings.pkl
-| |____podcast_df_040423.pkl
-| |____cleaned_df.pkl
-| |____podcast_embeddings_only.pkl
-| |____podcast_base_with_embeds.pkl
-|____assets
-| |____user_ratings_podcasts.png
-| |____bestdspods.jpg
-| |____best-data-science-podcasts.jpeg
-| |____demo_home.png
-| |____data_skeptic_logo.jpeg
-| |____itunes_podcast.png
-| |____duke360.jpeg
-|____notebooks
-| |____Rescrape_using_siddgood_code.ipynb
-| |____Clean_dataframe_text.ipynb
-| |____getting_more_podcast_reviews2.ipynb
-| |____get_images.ipynb
-| |____tfidf.ipynb
-| |____Get_text_embeddings_and_content_filtering.ipynb
-| |____hybrid_collaborative_filtering.ipynb
-| |____archived
-    |____exploringdata.ipynb
-    |____getting_more_podcast_reviews.ipynb
-    |____load_and_compare_datasets.ipynb
-    |____Get_text_embeddings.ipynb
+.gitignore
+README.md
+app
+   |-- ios
+   |   |-- DrawAndTell
+   |   |   |-- DrawAndTell.xcodeproj
+   |   |   |   |-- project.pbxproj
+   |   |   |   |-- project.xcworkspace
+   |   |   |   |   |-- contents.xcworkspacedata
+   |   |   |   |   |-- xcshareddata
+   |   |   |   |   |   |-- IDEWorkspaceChecks.plist
+   |   |   |   |-- xcuserdata
+   |   |   |   |   |-- shen.xcuserdatad
+   |   |   |   |   |   |-- xcschemes
+   |   |   |   |   |   |   |-- xcschememanagement.plist
+   |   |   |-- DrawAndTell
+   |   |   |   |-- Assets.xcassets
+   |   |   |   |   |-- AccentColor.colorset
+   |   |   |   |   |   |-- Contents.json
+   |   |   |   |   |-- AppIcon.appiconset
+   |   |   |   |   |   |-- Contents.json
+   |   |   |   |   |   |-- drawandtell_icon_1.png
+   |   |   |   |   |-- Contents.json
+   |   |   |   |-- ContentView.swift
+   |   |   |   |-- DrawAndTellApp.swift
+   |   |   |   |-- Extensions
+   |   |   |   |   |-- UIImage+Extension.swift
+   |   |   |   |-- Models
+   |   |   |   |   |-- Line.swift
+   |   |   |   |-- Preview Content
+   |   |   |   |   |-- Preview Assets.xcassets
+   |   |   |   |   |   |-- Contents.json
+   |   |   |   |-- Services
+   |   |   |   |   |-- DoodleRecognitionService.swift
+   |   |   |   |   |-- MLModels
+   |   |   |   |   |   |-- drawandtell_v1.mlmodel
+   |   |   |   |-- ViewModels
+   |   |   |   |   |-- DoodleRecognitionViewModel.swift
+   |   |   |   |-- Views
+   |   |   |   |   |-- CanvasView.swift
+   |   |   |   |   |-- DoodleView.swift
+   |   |   |   |-- animal_facts_dict.json
+   |-- streamlit
+   |   |-- assets
+   |   |   |-- animal_classes.txt
+   |   |   |-- animal_facts_dict.pkl
+   |   |   |-- model_v11_efficientnetb3.pth
+   |   |-- home.py
+   |   |-- requirements.txt
+assets
+   |-- doodle_cat_example.png
+   |-- drawandtell_cloud_screenshot.png
+   |-- drawandtell_ios_cat_screenshot.png
+   |-- drawandtell_ios_snail_screenshot.png
+data
+   |-- animal_facts
+   |   |-- animal_facts_dict.pkl
+models
+   |-- drawandtell_v1.mlmodel
+   |-- model_v11_efficientnetb3.pth
+notebooks
+   |-- Class_Activation_Maps.ipynb
+   |-- Convert_Torch_CoreML.ipynb
+   |-- Train_RandomForestClassifier.ipynb
+   |-- Visualize_Doodles.ipynb
+plots
+   |-- accuracy_model_v11_efficientnetb3.png
+   |-- accuracy_model_v11_topk_efficientnetb3.png
+   |-- accuracy_model_v13_efficientnetb3.png
+   |-- confusion_matrix.png
+   |-- confusion_matrix_noannotations.png
+   |-- doodles_sample.png
+   |-- loss_model_v11_efficientnetb3.png
+   |-- loss_model_v11_topk_efficientnetb3.png
+   |-- loss_model_v13_efficientnetb3.png
+requirements.txt
+scripts
+   |-- animal_classes.txt
+   |-- convert_torch_coreml.py
+   |-- download_animal_facts.py
+   |-- download_data.py
+   |-- plot_confusion_matrix.py
+   |-- train_neuralnetwork.py
+   |-- train_neuralnetwork_topk.py
+   |-- train_randomforest.py
+   |-- train_svm.py
 ```
