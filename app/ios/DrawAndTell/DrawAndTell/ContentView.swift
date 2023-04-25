@@ -71,6 +71,7 @@ struct ContentView: View {
                     lines: $viewModel.lines
                 )
                 .frame(maxHeight: 500)
+                .background(Color.white)
                 .border(.secondary, width: 0.5)
                 .padding(.vertical, 20)
                 
