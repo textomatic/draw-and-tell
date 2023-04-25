@@ -109,8 +109,8 @@ def main():
     model.to(device)
 
     # Setup streamlit page configs
-    st.set_page_config(page_title='Draw and Tell')
-    st.title('Draw and Tell')
+    st.set_page_config(page_title='Draw and Tell ✏️')
+    st.title('Draw and Tell ✏️')
     st.markdown('Draw an animal and let us guess what it is!')
 
     # Create a canvas component
