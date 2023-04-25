@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		642BEB2929F5E60700147D8D /* DrawAndTellApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BEB2829F5E60700147D8D /* DrawAndTellApp.swift */; };
+		642BEB2B29F5E60700147D8D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BEB2A29F5E60700147D8D /* ContentView.swift */; };
+		642BEB2D29F5E60900147D8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 642BEB2C29F5E60900147D8D /* Assets.xcassets */; };
+		642BEB3029F5E60900147D8D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 642BEB2F29F5E60900147D8D /* Preview Assets.xcassets */; };
+		642BEB3729F5F2C500147D8D /* animal_facts_dict.json in Resources */ = {isa = PBXBuildFile; fileRef = 642BEB3629F5F2C500147D8D /* animal_facts_dict.json */; };
+		642BEB3A29F5F53900147D8D /* DoodleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BEB3929F5F53900147D8D /* DoodleView.swift */; };
+		642BEB3C29F5F58C00147D8D /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BEB3B29F5F58C00147D8D /* CanvasView.swift */; };
+		642BEB3F29F5F61B00147D8D /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BEB3E29F5F61B00147D8D /* Line.swift */; };
+		642BEB4229F5F75700147D8D /* DoodleRecognitionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BEB4129F5F75700147D8D /* DoodleRecognitionViewModel.swift */; };
+		642BEB4729F5F84D00147D8D /* DoodleRecognitionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BEB4629F5F84D00147D8D /* DoodleRecognitionService.swift */; };
+		642BEB4C29F5F8DC00147D8D /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BEB4B29F5F8DC00147D8D /* UIImage+Extension.swift */; };
+		642BEB5429F6CE0500147D8D /* drawandtell_v1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 642BEB5329F6CE0500147D8D /* drawandtell_v1.mlmodel */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		642BEB2529F5E60700147D8D /* DrawAndTell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawAndTell.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		642BEB2829F5E60700147D8D /* DrawAndTellApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawAndTellApp.swift; sourceTree = "<group>"; };
+		642BEB2A29F5E60700147D8D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		642BEB2C29F5E60900147D8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		642BEB2F29F5E60900147D8D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		642BEB3629F5F2C500147D8D /* animal_facts_dict.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animal_facts_dict.json; sourceTree = "<group>"; };
+		642BEB3929F5F53900147D8D /* DoodleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoodleView.swift; sourceTree = "<group>"; };
+		642BEB3B29F5F58C00147D8D /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+		642BEB3E29F5F61B00147D8D /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		642BEB4129F5F75700147D8D /* DoodleRecognitionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoodleRecognitionViewModel.swift; sourceTree = "<group>"; };
+		642BEB4629F5F84D00147D8D /* DoodleRecognitionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoodleRecognitionService.swift; sourceTree = "<group>"; };
+		642BEB4B29F5F8DC00147D8D /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		642BEB5329F6CE0500147D8D /* drawandtell_v1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = drawandtell_v1.mlmodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		642BEB2229F5E60700147D8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		642BEB1C29F5E60700147D8D = {
+			isa = PBXGroup;
+			children = (
+				642BEB2729F5E60700147D8D /* DrawAndTell */,
+				642BEB2629F5E60700147D8D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		642BEB2629F5E60700147D8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				642BEB2529F5E60700147D8D /* DrawAndTell.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		642BEB2729F5E60700147D8D /* DrawAndTell */ = {
+			isa = PBXGroup;
+			children = (
+				642BEB4429F5F82900147D8D /* Extensions */,
+				642BEB4329F5F81F00147D8D /* Services */,
+				642BEB4029F5F72B00147D8D /* ViewModels */,
+				642BEB3D29F5F5F400147D8D /* Models */,
+				642BEB3829F5F45600147D8D /* Views */,
+				642BEB2829F5E60700147D8D /* DrawAndTellApp.swift */,
+				642BEB2A29F5E60700147D8D /* ContentView.swift */,
+				642BEB2C29F5E60900147D8D /* Assets.xcassets */,
+				642BEB3629F5F2C500147D8D /* animal_facts_dict.json */,
+				642BEB2E29F5E60900147D8D /* Preview Content */,
+			);
+			path = DrawAndTell;
+			sourceTree = "<group>";
+		};
+		642BEB2E29F5E60900147D8D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				642BEB2F29F5E60900147D8D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		642BEB3829F5F45600147D8D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				642BEB3929F5F53900147D8D /* DoodleView.swift */,
+				642BEB3B29F5F58C00147D8D /* CanvasView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		642BEB3D29F5F5F400147D8D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				642BEB3E29F5F61B00147D8D /* Line.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		642BEB4029F5F72B00147D8D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				642BEB4129F5F75700147D8D /* DoodleRecognitionViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		642BEB4329F5F81F00147D8D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				642BEB4529F5F83600147D8D /* MLModels */,
+				642BEB4629F5F84D00147D8D /* DoodleRecognitionService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		642BEB4429F5F82900147D8D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				642BEB4B29F5F8DC00147D8D /* UIImage+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		642BEB4529F5F83600147D8D /* MLModels */ = {
+			isa = PBXGroup;
+			children = (
+				642BEB5329F6CE0500147D8D /* drawandtell_v1.mlmodel */,
+			);
+			path = MLModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		642BEB2429F5E60700147D8D /* DrawAndTell */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 642BEB3329F5E60900147D8D /* Build configuration list for PBXNativeTarget "DrawAndTell" */;
+			buildPhases = (
+				642BEB2129F5E60700147D8D /* Sources */,
+				642BEB2229F5E60700147D8D /* Frameworks */,
+				642BEB2329F5E60700147D8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DrawAndTell;
+			productName = DrawAndTell;
+			productReference = 642BEB2529F5E60700147D8D /* DrawAndTell.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		642BEB1D29F5E60700147D8D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					642BEB2429F5E60700147D8D = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 642BEB2029F5E60700147D8D /* Build configuration list for PBXProject "DrawAndTell" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 642BEB1C29F5E60700147D8D;
+			productRefGroup = 642BEB2629F5E60700147D8D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				642BEB2429F5E60700147D8D /* DrawAndTell */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		642BEB2329F5E60700147D8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				642BEB3029F5E60900147D8D /* Preview Assets.xcassets in Resources */,
+				642BEB2D29F5E60900147D8D /* Assets.xcassets in Resources */,
+				642BEB3729F5F2C500147D8D /* animal_facts_dict.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		642BEB2129F5E60700147D8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				642BEB2B29F5E60700147D8D /* ContentView.swift in Sources */,
+				642BEB3A29F5F53900147D8D /* DoodleView.swift in Sources */,
+				642BEB3C29F5F58C00147D8D /* CanvasView.swift in Sources */,
+				642BEB4C29F5F8DC00147D8D /* UIImage+Extension.swift in Sources */,
+				642BEB4229F5F75700147D8D /* DoodleRecognitionViewModel.swift in Sources */,
+				642BEB5429F6CE0500147D8D /* drawandtell_v1.mlmodel in Sources */,
+				642BEB2929F5E60700147D8D /* DrawAndTellApp.swift in Sources */,
+				642BEB4729F5F84D00147D8D /* DoodleRecognitionService.swift in Sources */,
+				642BEB3F29F5F61B00147D8D /* Line.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		642BEB3129F5E60900147D8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		642BEB3229F5E60900147D8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		642BEB3429F5E60900147D8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DrawAndTell/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app requires access to the Photos library to save your doodles";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ShenJuinLee.DrawAndTell;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		642BEB3529F5E60900147D8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DrawAndTell/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app requires access to the Photos library to save your doodles";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ShenJuinLee.DrawAndTell;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		642BEB2029F5E60700147D8D /* Build configuration list for PBXProject "DrawAndTell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				642BEB3129F5E60900147D8D /* Debug */,
+				642BEB3229F5E60900147D8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		642BEB3329F5E60900147D8D /* Build configuration list for PBXNativeTarget "DrawAndTell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				642BEB3429F5E60900147D8D /* Debug */,
+				642BEB3529F5E60900147D8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 642BEB1D29F5E60700147D8D /* Project object */;
+}
