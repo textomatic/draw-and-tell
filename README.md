@@ -152,6 +152,7 @@ You can listen to the audio of a random fun fact about the animal as well.
 
 Screenshot of the web app:
 ![Draw and Tell Web Application](assets/drawandtell_cloud_screenshot.png)
+
 The demo app is hosted on an Azure Virtual Machine. [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](http://20.119.56.82:8501) to try out Draw and Tell.
 
 ### Mobile (iOS)
